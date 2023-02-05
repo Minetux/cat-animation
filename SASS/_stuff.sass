@@ -1,0 +1,143 @@
+.floor 
+    position: absolute
+    bottom: 0
+    width: 100%
+    height: 96px
+    background-color: $floor-color
+
+.cat
+    display: block
+    &__color
+        border: solid 4px $cat-contour
+        background-color: $cat-color
+    &__head
+        position: relative
+        left: 50%
+        transform: translateX(-50%) 
+        bottom: -85px
+        width: 170px
+        height: 120px
+        border-radius: 45%
+    &__body
+        position: relative
+        left: 50%
+        transform: translateX(-50%)
+        bottom: -135px 
+        width: 120px
+        height: 90px
+        border-radius: 50%
+        animation: sleep 15s linear 1s infinite
+    &__ears
+        position: relative
+        width: 40px
+        height: 40px
+        border-bottom: none
+        border-top-right-radius: 25%
+        border-top-left-radius: 25%
+        &-left
+            left: 35%
+            bottom: 45px
+            transform: rotate(-30deg)
+        &-right
+            left: 58%
+            bottom: 80px
+            transform: rotate(30deg)
+    &__eyes
+        position: relative
+        width: 30px
+        height: 5px
+        border-bottom-left-radius: 50%
+        border-bottom-right-radius: 50%
+        background-color: $black-color
+        &-left
+            left: 40%
+            bottom: 70px
+        &-right
+            left: 55%
+            bottom: 75px
+    &__paw
+        position: relative
+        width: 50px
+        height: 30px
+        border-top-left-radius: 50%
+        border-top-right-radius: 50%
+        &-left
+            left: 40%
+            bottom: 28px
+        &-right
+            left: 50%
+            bottom: 58px
+    &__claw
+        position: relative
+        width: 3px
+        height: 15px
+        background-color: $cat-contour
+        &-left-1
+            left: 42%
+            bottom: 75px
+        &-left-2
+            left: 45%
+            bottom: 90px
+        &-right-1
+            left: 53%
+            bottom: 105px
+        &-right-2
+            left: 56%
+            bottom: 120px
+    &__nose
+        position: relative
+        left: 50%
+        transform: translateX(-50%)
+        bottom: 185px
+        width: 15px
+        height: 12px
+        background-color: $pink-color
+    &__whiskar
+        position: relative
+        width: 25px
+        height: 2px
+        background-color: $black-color
+        &-top-left
+            left: 44%
+            bottom: 200px
+            transform: rotate(15deg)
+        &-left
+            left: 44%
+            bottom: 195px
+        &-bottom-left
+            left: 44%
+            bottom: 190px
+            transform: rotate(-10deg)
+        &-top-right
+            left: 51.5%
+            bottom: 205px
+            transform: rotate(-15deg)
+        &-right
+            left: 51.5%
+            bottom: 200px
+        &-bottom-right
+            left: 51.5%
+            bottom: 195px
+            transform: rotate(10deg)
+    &__mouth
+        position: relative
+        width: 15px
+        height: 2px
+        background-color: $black-color
+        &-left
+            left: 48%
+            bottom: 192px
+            transform: rotate(-45deg)
+        &-right
+            left: 50%
+            bottom: 193px
+            transform: rotate(45deg)
+    &__tail 
+        position: relative
+        left: 50%
+        transform: translateX(-50%)
+        bottom: 375px
+        width: 15px
+        height: 70px
+        border-top-right-radius: 50%
+        border-bottom-left-radius: 50%
